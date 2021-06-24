@@ -77,8 +77,6 @@ h4  {
 header {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
     width: 100%;    
 }
 
@@ -109,6 +107,10 @@ nav li {
     list-style-type: none;
 }
 
+nav li:hover {
+    transform: scale(1.1);
+}
+
 nav a {
     font-weight: 700;
     text-decoration: none;
@@ -123,6 +125,10 @@ button {
     background-color:rgba(255, 255, 207, 0.466);
     font-family: 'Carrois Gothic SC', sans-serif;
     padding: 10px 20px;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 /**=====   COL-1 CARD-1 USER INFORMATION  =========*/
@@ -154,6 +160,10 @@ button {
 
 #edit-settings {
     padding: 15px 0;
+}
+
+#edit-settings a:hover {
+    transform: scale(1.1);
 }
 
 .fa-map-marker-alt,
@@ -252,6 +262,12 @@ p .fa-plus-circle {
     padding-right: 15px;
 }
 
+p .fa-check-circle:hover,
+p .fa-plus-circle:hover {
+    transform: scale(1.1);
+}
+
+
 .line {
     border-color: #B0B0B0;
     border-width: thin;
@@ -264,3 +280,6 @@ p .fa-plus-circle {
     padding: 20px 0 20px 40px;
 }
 
+#view-more:hover {
+    transform: scale(1.1);
+}
