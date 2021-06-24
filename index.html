@@ -7,34 +7,162 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/0690bb9a70.js" crossorigin="anonymous"></script>
-    <!-- Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     
-    <title>User Card</title>
+    <title>Profile</title>
 
 </head>
 
 <body>
-    <div class="container" id="user-card">
-        <div id="top-bar">
-            <p id ="profile-icon"><i class="fas fa-user-ninja"></i></p>
-        </div>
-        
-        <div id="user-information">
-            <h1>Anna FitzGerald</h1>
+    <header class="top-bar">
+        <div id="navigation">
+            <nav id="nav-bar">
+                <h1>PROFILE</h1>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">my profile</a></li>
+                        <li><a href="#">find connections</a></li>
+                    </ul>
+            </nav>
+            <div id="button-container">
+                <button>sign out</button>
+            </div> <!--END button box -->
+        </div> <!--END navigation -->
+    </header>
+
+<div id="main-container">
+    
+    <div class="col-1"> 
+        <div class="card" id="card-1">
+            <div class="top-bar">
+                <p>
+                    <i class="fas fa-user-ninja"></i>
+                </p>
+            </div> 
+            <div id="user-information">
+                <h1>Anna FitzGerald</h1>
                 <div id="location">
-                    <p id="map icon"><i class="fas fa-map-marker-alt"></i></p>
-                    <h2>USA and Canada</h2>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </p>
+                    <h2>Usa and Canada</h2>
                 </div>
-            <h3>Designer | Developer | Engineer</h3>
-            <h4>UI with Clean Code and Fluid Designs.</h4>
-                <div id="settings-edit">
-                    <p id="cog-icon"><i class="fas fa-cog"></i></p>
-                    <a href="">edit profile</a>
+
+                <h3>Designer | Developer | Engineer</h3>
+                <h4>UI with Clean Code and Fluid Designs.</h4>
+
+                <div id="edit-settings">
+                    <p>
+                        <i class="fas fa-cog"></i>
+                    </p>
+                    <a href="#">edit profile</a>
                 </div>   
-        </div>
-    </div>   
+            </div> <!-- END user-information-->
+        </div> <!-- END card-1 -->
+    
+        <div class="card" id="card-2"> <!-- BEGIN card-2 -->
+            <div class="top-bar">
+                <h2>education</h2>
+            </div>
+            <div class="education">
+                <h3>Coding Dojo | Full Stack Bootcamp</h3>
+                <h4>Triple Black Belt in Python, MERN, and C#</h4> 
+            </div>
+            <div class="education">
+                <h3>Skillcrush</h3>
+                <h4>Visual Design & Web Development</h4> 
+            </div>
+            <div class="education">
+                <h3>Nova Scotia College of Art & Design</h3>
+                <h4>BFA Fine Art</h4> 
+            </div>
+        </div><!-- END card-2 -->
+    </div><!-- END col-1 div --> 
+    
+    
+    <aside class="col-2"> <!-- BEGIN card-3 -->
+        <div class="card" id="card-3">
+            <div class="top-bar">
+                <div id="total-requests">
+                    <h2>2</h2>
+                </div>
+                <h2>connection requests</h2>
+            </div>
+
+            <div class="connection-row"> <!-- DESIGN EXAMPLE make dynamic with JavaScript -->
+                <div class="user">
+                    <p>
+                        <i class="fas fa-user-ninja"></i>
+                    </p>
+                    <p class="users-name">Cella June</p>
+                </div>
+                <div class="feedback-user-connection">
+                    <p>
+                        <i class="fas fa-check-circle"></i>
+                    </p>
+                    <p>
+                        <i class="fas fa-plus-circle"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="connection-row">
+                <div class="user">
+                    <p>
+                        <i class="fas fa-user-ninja"></i>
+                    </p>
+                    <p class="users-name">Evangeline Frank</p>
+                </div>
+                <div class="feedback-user-connection">
+                    <p>
+                        <i class="fas fa-check-circle"></i>
+                    </p>
+                    <p>
+                        <i class="fas fa-plus-circle"></i>
+                    </p>
+                </div>
+            </div>
+        </div><!-- END card-3 -->
+
+        <div class="card" id="card-4"> <!-- BEGIN card-4 -->
+            <div class="top-bar">
+                <div id="total-connections">
+                    <h2>555</h2>
+                </div>
+                <h2>your connections</h2>
+            </div>
+            <div class="user">
+                <p>
+                    <i class="fas fa-user-ninja"></i>
+                </p>
+                <p class="users-name">Wilde Rae</p>
+            </div>
+            <div class="user">
+                <p>
+                    <i class="fas fa-user-ninja"></i>
+                </p>
+                <p class="users-name">Zeal Realio</p>
+            </div>
+            <div class="user">
+                <p>
+                    <i class="fas fa-user-ninja"></i>
+                </p>
+                <p class="users-name">Tilda Forest</p>
+            </div>
+            <div class="user">
+                <p>
+                    <i class="fas fa-user-ninja"></i>
+                </p>
+                <p class="users-name">Allegre Stein</p>
+            </div>
+            
+            <div class="line"></div>
+            
+            <div id="view-more">
+                <a href="#" target="_blank" rel="noopener noreferrer">view more</a>
+            </div>
+        </div><!-- END card-4 -->
+    </aside><!--END col-2 aside-->
+
+</div><!-- End main-container -->
 </body>
 </html>
