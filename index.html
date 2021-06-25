@@ -17,22 +17,20 @@
         <div id="navigation">
             <nav id="nav-bar">
                 <h1>PROFILE</h1>
-                    <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">my profile</a></li>
-                        <li><a href="#">find connections</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">my profile</a></li>
+                    <li><a href="#">find connections</a></li>
+                </ul>
             </nav>
-            <div id="button-container">
-                <button>sign out</button>
-            </div> <!--END button box -->
+            <button id="button-container">sign out</button>
         </div> <!--END navigation -->
     </header>
 
 <div id="main-container">
     
     <div class="col-1"> 
-        <div class="card" id="card-1">
+        <div class="card" id="user-profile-card"><!-- BEGIN USER PROFILE CARD-->
             <div class="top-bar">
                 <p>
                     <i class="fas fa-user-ninja"></i>
@@ -57,9 +55,9 @@
                     <a href="#">edit profile</a>
                 </div>   
             </div> <!-- END user-information-->
-        </div> <!-- END card-1 -->
+        </div> <!-- END user-profile-card -->
     
-        <div class="card" id="card-2"> <!-- BEGIN card-2 -->
+        <div class="card" id="education-card"> <!-- BEGIN EDUCATION CARD -->
             <div class="top-bar">
                 <h2>education</h2>
             </div>
@@ -75,12 +73,12 @@
                 <h3>Nova Scotia College of Art & Design</h3>
                 <h4>BFA Fine Art</h4> 
             </div>
-        </div><!-- END card-2 -->
+        </div><!-- END education-card -->
     </div><!-- END col-1 div --> 
     
     
-    <aside class="col-2"> <!-- BEGIN card-3 -->
-        <div class="card" id="card-3">
+    <aside class="col-2"> <!-- BEGIN CONNECTION REQUEST CARD -->
+        <div class="card" id="connection-request-card">
             <div class="top-bar">
                 <div id="total-requests">
                     <h2>2</h2>
@@ -88,7 +86,7 @@
                 <h2>connection requests</h2>
             </div>
 
-            <div class="connection-row"> <!-- DESIGN EXAMPLE make dynamic with JavaScript -->
+            <div class="connection-row">
                 <div class="user">
                     <p>
                         <i class="fas fa-user-ninja"></i>
@@ -123,7 +121,7 @@
             </div>
         </div><!-- END card-3 -->
 
-        <div class="card" id="card-4"> <!-- BEGIN card-4 -->
+        <div class="card" id="connections-card"> <!-- BEGIN CONNECTIONS CARD -->
             <div class="top-bar">
                 <div id="total-connections">
                     <h2>555</h2>

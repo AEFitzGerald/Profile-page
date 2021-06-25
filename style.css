@@ -41,25 +41,23 @@ h4  {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 1200px;
+    width: 70%;
 }
 
 .col-1 {
     display: flex;
     flex-direction: column;
-    order: 1;
     width: 60%;
 }
 
 .col-2 {
     display: flex;
     flex-direction: column;
-    order: 2;
     width: 35%;
 }
 
 .top-bar {
-    background-image:linear-gradient(to right, rgb(253, 139, 192) , rgb(245, 105, 50));
+    background-image:linear-gradient(to right, rgb(253, 139, 192,0.7) , rgb(245, 105, 50,0.8));
     height: 70px;
     width: 100%;   
 }
@@ -84,7 +82,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1200px;
+    width: 70%;
     flex-direction: row;
 }
 
@@ -116,11 +114,6 @@ nav a {
     text-decoration: none;
 }
 
-#button-container {
-    display: flex;
-    justify-content: flex-end; 
-}
-
 button {
     background-color:rgba(255, 255, 207, 0.466);
     font-family: 'Carrois Gothic SC', sans-serif;
@@ -131,17 +124,13 @@ button:hover {
     transform: scale(1.1);
 }
 
-/**=====   COL-1 CARD-1 USER INFORMATION  =========*/
+/**=====   COL-1 USER-PROFILE-CARD =========*/
 
 #user-information {
     padding: 35px 10px 40px 40px;
 }
 
-#card-1 .fa-user-ninja {
-	color: black;
-}
-
-#card-1 p .fa-user-ninja {
+#user-profile-card p .fa-user-ninja {
     display: flex;
     font-size: 4.5em;
     padding: 15px 0 40px 40px;
@@ -166,12 +155,6 @@ button:hover {
     transform: scale(1.1);
 }
 
-.fa-map-marker-alt,
-.fa-cog {
-    color: #383838;
-    display: flex;
-}
-
 p .fa-map-marker-alt,
 p .fa-cog {
     font-size: 1.6em;
@@ -184,14 +167,14 @@ p .fa-cog {
     padding: 40px 5px 10px 0; 
 }
 
-/*======  COL-1 CARD-2 EDUCATION   =========*/
+/*======  COL-1 EDUCATION-CARD   =========*/
 
-#card-2 .top-bar {
+#education-card .top-bar {
     display: flex;
     align-items: center;
 }
 
-#card-2 h2 {
+#education-card h2 {
     padding-left: 40px;
 }
 
@@ -199,10 +182,10 @@ p .fa-cog {
     padding: 30px 0 10px 40px;
 }
 
-/*====== ASIDE CARD-3 and CARD-4 CONNECTION REQUESTS  ======  */
+/*====== ASIDE CONNECTION REQUEST CARD and CONNECTION CARD  ======  */
 
-#card-3 .top-bar,
-#card-4 .top-bar {
+#connection-request-card .top-bar,
+#connections-card .top-bar {
     align-items: center;
     display: flex;
     justify-content: flex-start;
@@ -219,10 +202,7 @@ p .fa-cog {
     margin: 0 20px 0 30px;
 }
 
-#total-requests {
-    width: 50px;
-}
-
+#total-requests,
 #total-connections {
     width: 50px;
 }
@@ -267,11 +247,8 @@ p .fa-plus-circle:hover {
     transform: scale(1.1);
 }
 
-
 .line {
-    border-color: #B0B0B0;
-    border-width: thin;
-    border-style: solid;
+    border:thin #B0B0B0 solid;
     margin-top: 20px;
     width: 100%;
 }
